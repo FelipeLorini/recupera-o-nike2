@@ -1,0 +1,29 @@
+.btn-comprar {
+    display: inline-block;
+    background-color: #000;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+.btn-comprar:hover {
+    background-color: #444;
+}
+
+.compra-container {
+    padding: 2rem;
+}
+
+.produto-compra {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.produto-compra form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
