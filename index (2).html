@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> NIKE </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1> NIKE </h1>
+            <img src=" img/nikelogo2.png " alt="Logo" height="50">
+        </div>
+        <nav>
+            <button><a href="masculino.html">Masculino</a> </button>
+           <button><a href="feminino.html">Feminino</a> </button>
+        </nav>
+    </header>
+
+
+    <main>
+       
+
+
+        <section class="destaque-produto">
+            <h2>ESTILO ELEVADO</h2>
+            <img src=" img/home.png" alt="Logo" height="900">
+            <div class="produto-info">
+               
+            </div>
+        </section>
+    </main>
+
+
+    
+
+
+
+
+    <footer>
+        <p>&copy; 2025 NIKE. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
+ 
+
+
+<style>
+
+
+
+
+   
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #e5e5e5;
+  background-color: #111;
+}
+
+header {
+  background-color: #000;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #222;
+}
+
+.logo h1 {
+  margin: 0;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 1.5rem;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #ff3b3b;
+}
+
+main {
+  padding: 2rem;
+}
+
+section {
+  margin-bottom: 3rem;
+}
+
+.categoria-lista,
+.produto-lista {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.categoria-lista {
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+.produto-lista {
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.categoria,
+.produto {
+  background-color: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: 12px;
+  padding: 1rem;
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s, border 0.3s;
+}
+
+.categoria:hover,
+.produto:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 5px 15px rgba(255,59,59,0.2);
+  border: 1px solid #ff3b3b;
+}
+
+.produto img,
+.categoria img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  background-color: #000;
+  padding: 0.5rem;
+}
+
+.preco {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+  color: #ff3b3b;
+}
+
+button {
+  background-color: #ff3b3b;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: #ff5c5c;
+  transform: scale(1.05);
+}
+
+button a {
+  color: white;
+  text-decoration: none;
+}
+
+footer {
+  background-color: #000;
+  color: #aaa;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  border-top: 1px solid #222;
+}
+
+
+
+    .categoria-lista, .produto-lista {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .produto img, .categoria-lista img {
+        width: 80%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    footer {
+        text-align: center;
+        font-size: 14px;
+        padding: 15px;
+    }
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    nav a {
+        margin: 0;
+    }
+
+    main {
+        padding: 1rem;
+    }
+
+    .destaque-produto img {
+        width: 100%;
+        height: auto;
+    }
+
+    .categoria-lista, 
+    .produto-lista {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .produto img, 
+    .categoria img {
+        width: 80%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    footer {
+        text-align: center;
+        font-size: 14px;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo h1 {
+        font-size: 1.2rem;
+    }
+
+    button {
+        width: 100%;
+    }
+}
+
+
+</style>
+
